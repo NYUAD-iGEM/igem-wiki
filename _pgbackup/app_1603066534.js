@@ -315,8 +315,8 @@ gsap.from('.second-text-panel-description', {
 //2
 gsap.to('.second-text-panel-description', {
   onStart: () => {
-    desc_2.innerHTML ="Swab an animal at the point of capture/care <br/><br/>Insert the swabbed specimen to our device";},
-  ease: 'power1.out', 
+    desc_2.textContent ="<br/>Insert the swabbed specimen to our device";},
+  ease: 'power1.out',
   scrollTrigger: {
     trigger: '.second-left-panel-2',
     start: 'top top', // the default values
@@ -328,7 +328,7 @@ gsap.to('.second-text-panel-description', {
 //3
 gsap.to('.second-text-panel-description', {
   onStart: () => {
-    desc_2.innerHTML ="Swab an animal at the point of capture/care <br/><br/> Insert the swabbed specimen to our device <br/><br/> Receive the result back in 30-60 minutes";
+    desc_2.textContent ="Swab an animal at the point of capture/care <br/> Insert the swabbed specimen to our device <br/> Receive the result back in 30-60 minutes";
   },
   //this width depends on the characters in the title
   //width: '18.5ch',

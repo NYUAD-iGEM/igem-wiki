@@ -370,12 +370,6 @@ span:nth-child(4) {
     color: #253F1D;
 }
 
-.second-text-panel-description {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1.3rem;
-    color: #253F1D;
-}
-
 /* .text-panel-description {
   opacity: 0;
   transform: translateY(15);

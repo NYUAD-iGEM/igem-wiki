@@ -290,7 +290,7 @@ const desc_2 = document.querySelector('.second-text-panel-description');
 gsap.to('.second-text-panel-title', {
   onStart: () => {
     title_2.textContent = 'Fungal Diagnostics';
-    desc_2.textContent ="Swab an animal at the point of capture/care";
+    //desc_2.textContent ="Swab an animal at the point of capture/care";
   },
   width: '16ch',
   ease: 'power1.out',
@@ -315,8 +315,12 @@ gsap.from('.second-text-panel-description', {
 //2
 gsap.to('.second-text-panel-description', {
   onStart: () => {
-    desc_2.innerHTML ="Swab an animal at the point of capture/care <br/><br/>Insert the swabbed specimen to our device";},
-  ease: 'power1.out', 
+      li=document.getElementById("cards-li-2")
+      li.style.opacity=1
+    //desc_2.textContent ="Swab an animal at the point of capture/care<br>Insert the swabbed specimen to our device";
+  },
+  //width: '14ch',
+  ease: 'power1.out',
   scrollTrigger: {
     trigger: '.second-left-panel-2',
     start: 'top top', // the default values
@@ -328,7 +332,9 @@ gsap.to('.second-text-panel-description', {
 //3
 gsap.to('.second-text-panel-description', {
   onStart: () => {
-    desc_2.innerHTML ="Swab an animal at the point of capture/care <br/><br/> Insert the swabbed specimen to our device <br/><br/> Receive the result back in 30-60 minutes";
+    //desc_2.textContent ="Swab an animal at the point of capture/care<br>Insert the swabbed specimen to our device<br>Receive the result back in 30-60 minutes";
+       li=document.getElementById("cards-li-3")
+      li.style.opacity=1
   },
   //this width depends on the characters in the title
   //width: '18.5ch',
@@ -349,7 +355,7 @@ tl4.addLabel('second', 1);
 tl4
   .fromTo('.second-right-panel-2', { xPercent: -100, x: 0 }, { xPercent: 0 }, 'first')
   // ...and the image the opposite way (at the same time)
-  .fromTo('.second-background-5', { xPercent: 100, x: 0 }, { xPercent: 0 }, 'first')
+  .fromTo('..second-background-5', { xPercent: 100, x: 0 }, { xPercent: 0 }, 'first')
 
   .fromTo('.second-left-panel-2', { yPercent: 100, y: 0 }, { yPercent: 0 }, 'first')
 

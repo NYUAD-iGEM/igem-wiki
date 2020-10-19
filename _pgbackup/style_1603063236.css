@@ -247,7 +247,7 @@ span:nth-child(4) {
 }
 
 .second-background-2 {
-    background-color: black;
+    background-image: url(https://www.theauthoredascension.com/wp-content/uploads/2011/12/Fleet-Foxes-Helplessness-Blues1.jpg);
     background-size: cover;
     background-position: center center;
     transform: translate(0%, -100%);
@@ -319,7 +319,7 @@ span:nth-child(4) {
 }
 
 .second-background-5 {
-    background-image: url(assets/Set_2.2_TR.jpg);
+    background-image: url(assets/Set_1.3_TR.jpg);
     background-size: cover;
     background-position: center center;
     transform: translate(100%, 0%);
@@ -365,12 +365,6 @@ span:nth-child(4) {
 }
 
 .text-panel-description {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1.3rem;
-    color: #253F1D;
-}
-
-.second-text-panel-description {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 1.3rem;
     color: #253F1D;
