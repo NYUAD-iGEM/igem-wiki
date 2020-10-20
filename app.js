@@ -31,6 +31,18 @@ gsap.to('.cover', {
   },
 });
 
+// video fade animation
+gsap.from('.video-placeholder', {
+  opacity: 0,
+  ease: 'power1.out',
+  scrollTrigger: {
+    trigger: '.placeholder',
+    start: 'top 50%', // the default values
+    end: 'bottom bottom',
+    scrub: 0.5,
+  },
+});
+
 ///////////////////////////////////////////////////////
 //this is where the parallax animations starts
 
@@ -363,3 +375,12 @@ tl4
 
   .fromTo('.second-background-3', { yPercent: -100, y: 0 }, { yPercent: 0 }, 'second');
 
+
+// hover animation on video
+const text = document.querySelector('.video-text')
+document.querySelector('.video-placeholder').addEventListener('mouseover', () => {
+  text.classList.add('video-text-visible');
+})
+document.querySelector('.video-placeholder').addEventListener('mouseout', () => {
+  text.classList.remove('video-text-visible');
+})
