@@ -363,7 +363,7 @@ gsap.to('.second-text-panel-description', {
   ease: 'power1.out',
   scrollTrigger: {
     trigger: '.second-left-panel-4',
-    start:() => '+=' + document.querySelector('.panel').offsetHeight*2 , // the default values
+    start:() => '+=' + document.querySelector('.panel').offsetHeight , // the default values
     duration: 1,
     toggleActions: 'restart none restart restart',
     //markers: true,

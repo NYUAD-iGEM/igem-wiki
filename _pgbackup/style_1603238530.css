@@ -260,13 +260,6 @@ span:nth-child(4) {
     transform: translate(0%, -100%);
 }
 
-.second-background-left-4 {
-    background-image: url(assets/Set_2.4_Left.jpg);
-    background-size: cover;
-    background-position: center center;
-    transform: translate(0%, -100%);
-}
-
 .right-panel,
 .second-right-panel {
     position: absolute;
@@ -319,13 +312,6 @@ span:nth-child(4) {
 }
 
 .second-video-background-6 {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    transform: translate(100%, 0%);
-}
-
-.second-video-background-7 {
     width: 100%;
     height: 100%;
     background-color: black;
@@ -534,4 +520,43 @@ span:nth-child(4) {
     opacity: 1;
 }
 
+/* SIDEBAR LIST */
+.link {
+    color: #2175FF;
+    cursor: pointer;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 98px !important;
+}
 
+.link--arrowed {
+    display: inline-block;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.link--arrowed .arrow-icon {
+    position: relative;
+    top: -1px;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+    vertical-align: middle;
+}
+
+.link--arrowed .arrow-icon--circle {
+    -webkit-transition: stroke-dashoffset .3s ease;
+    transition: stroke-dashoffset .3s ease;
+    stroke-dasharray: 95;
+    stroke-dashoffset: 95;
+}
+
+.link--arrowed:hover .arrow-icon {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+}
+
+.link--arrowed:hover .arrow-icon--circle {
+    stroke-dashoffset: 0;
+}

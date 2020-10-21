@@ -353,22 +353,6 @@ gsap.to('.second-text-panel-description', {
     //markers: true,
   },
 });
-
-gsap.to('.second-text-panel-description', {
-  onStart: () => {
-    desc_2.innerHTML ="Swab an animal at the point of capture/care <br/><br/> Insert the swabbed specimen to our device <br/><br/> Receive the result back in 30-60 minutes <br/><br/> Database and API";
-  },
-  //this width depends on the characters in the title
-  //width: '18.5ch',
-  ease: 'power1.out',
-  scrollTrigger: {
-    trigger: '.second-left-panel-4',
-    start:() => '+=' + document.querySelector('.panel').offsetHeight*2 , // the default values
-    duration: 1,
-    toggleActions: 'restart none restart restart',
-    //markers: true,
-  },
-});
 // text animation end//
 
 tl4.addLabel('first', 0);

@@ -261,7 +261,7 @@ span:nth-child(4) {
 }
 
 .second-background-left-4 {
-    background-image: url(assets/Set_2.4_Left.jpg);
+    background-image: url(assets/Set_2.3_Left.jpg);
     background-size: cover;
     background-position: center center;
     transform: translate(0%, -100%);
@@ -319,13 +319,6 @@ span:nth-child(4) {
 }
 
 .second-video-background-6 {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    transform: translate(100%, 0%);
-}
-
-.second-video-background-7 {
     width: 100%;
     height: 100%;
     background-color: black;

@@ -287,7 +287,7 @@ let tl4 = gsap.timeline({
     trigger: '.second-panel',
     start: 'top top',
     // makes the height of the scrolling (while pinning) match the width, thus the speed remains constant (vertical/horizontal)
-    end: () => '+=' + document.querySelector('.second-panel').offsetHeight*3.2,
+    end: () => '+=' + document.querySelector('.second-panel').offsetHeight*2.2,
     scrub: 0.4,
     pin: true,
     // anticipatePin: 1,
@@ -353,27 +353,10 @@ gsap.to('.second-text-panel-description', {
     //markers: true,
   },
 });
-
-gsap.to('.second-text-panel-description', {
-  onStart: () => {
-    desc_2.innerHTML ="Swab an animal at the point of capture/care <br/><br/> Insert the swabbed specimen to our device <br/><br/> Receive the result back in 30-60 minutes <br/><br/> Database and API";
-  },
-  //this width depends on the characters in the title
-  //width: '18.5ch',
-  ease: 'power1.out',
-  scrollTrigger: {
-    trigger: '.second-left-panel-4',
-    start:() => '+=' + document.querySelector('.panel').offsetHeight*2 , // the default values
-    duration: 1,
-    toggleActions: 'restart none restart restart',
-    //markers: true,
-  },
-});
 // text animation end//
 
 tl4.addLabel('first', 0);
 tl4.addLabel('second', 1);
-tl4.addLabel('third', 2);
 // animate the container one way...
 tl4
   .fromTo('.second-right-panel-2', { xPercent: -100, x: 0 }, { xPercent: 0 }, 'first')
@@ -390,15 +373,7 @@ tl4
 
   .fromTo('.second-left-panel-3', { yPercent: 100, y: 0 }, { yPercent: 0 }, 'second')
 
-  .fromTo('.second-background-3', { yPercent: -100, y: 0 }, { yPercent: 0 }, 'second')
-
-  .fromTo('.second-right-panel-4', { xPercent: -100, x: 0 }, { xPercent: 0 }, 'third')
-
-  .fromTo('.second-video-background-7', { xPercent: 100, x: 0 }, { xPercent: 0 }, 'third')
-
-  .fromTo('.second-left-panel-4', { yPercent: 100, y: 0 }, { yPercent: 0 }, 'third')
-
-  .fromTo('.second-background-left-4', { yPercent: -100, y: 0 }, { yPercent: 0 }, 'third');
+  .fromTo('.second-background-3', { yPercent: -100, y: 0 }, { yPercent: 0 }, 'second');
 
 
 // hover animation on video
