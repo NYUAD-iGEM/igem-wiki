@@ -639,24 +639,23 @@ button:focus {
     position: relative;
     background-color: white;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
 }
-
-.footer-logo {
+.footer-logo{
     position: relative;
-    width: 25%;
-    left: 38%;
+ width:25%;
+ left:38%;
 }
 
-.social-media {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.social-media{
+ position:relative;
+ display: flex;
+ flex-direction: row;
+ justify-content:center;
 }
 
-.social-media-img {
-    border-radius: 33%;
-    height: 100%;
-    width: 100%;
+.social-media-img{
+ border-radius:50%;  
+    height:100%;
+    width:10%;
 }

@@ -58,8 +58,7 @@ body {
 }
 
 .main-logo {
-    position: relative;
-    width: 20%;
+    width: 100px;
 }
 
 /* changed this into an id for more specificity */
@@ -561,7 +560,7 @@ body {
 
 /* Cursor Styling */
 h1.cursor {
-    font-size: 2rem !important;
+    font-size: 2rem;
 }
 
 .cursor::after {
@@ -576,8 +575,7 @@ h1.cursor {
 
 h1.cursor::after {
     height: 24px;
-    width: 2px;
-    font-size: 2rem !important;
+    width: 13px;
 }
 
 p.cursor::after {

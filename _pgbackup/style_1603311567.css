@@ -576,7 +576,7 @@ h1.cursor {
 
 h1.cursor::after {
     height: 24px;
-    width: 2px;
+    width: 13px;
     font-size: 2rem !important;
 }
 

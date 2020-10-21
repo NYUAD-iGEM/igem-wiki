@@ -419,10 +419,10 @@ var i = 0,
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".  
 var textArray = [
-  "CRISPR", 
-  "ABE", 
-  "CANNOT",
-  "EMI"
+  "", 
+  "", 
+  "",
+  ""
 ];
 
 // Speed (in milliseconds) of typing.

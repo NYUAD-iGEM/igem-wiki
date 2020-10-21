@@ -58,8 +58,7 @@ body {
 }
 
 .main-logo {
-    position: relative;
-    width: 20%;
+    width: 100px;
 }
 
 /* changed this into an id for more specificity */
@@ -193,7 +192,6 @@ span:nth-child(4) {
     height: 100%;
     width: 50%;
     transform: translate(0%, 100%);
-    background-color: black;
 }
 
 .background {
@@ -264,17 +262,16 @@ span:nth-child(4) {
 
 .second-background-3 {
     background-image: url(assets/Set_2.3_Left.jpg);
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     transform: translate(0%, -100%);
 }
 
 .second-background-left-4 {
     background-image: url(assets/Set_2.4_Left.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     transform: translate(0%, -100%);
-    background-repeat: no-repeat;
 }
 
 .right-panel,
@@ -544,61 +541,4 @@ span:nth-child(4) {
     opacity: 1;
 }
 
-/* TYPEWRITER FRONT PAGE */
-body {
-    background-color: #333;
-}
 
-.output {
-    text-align: center;
-    font-family: 'Source Code Pro', monospace;
-    color: white;
-}
-
-.output h1 {
-    font-size: 30px;
-}
-
-/* Cursor Styling */
-h1.cursor {
-    font-size: 2rem !important;
-}
-
-.cursor::after {
-    content: '';
-    display: inline-block;
-    margin-left: 3px;
-    background-color: white;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-}
-
-h1.cursor::after {
-    height: 24px;
-    width: 2px;
-    font-size: 2rem !important;
-}
-
-p.cursor::after {
-    height: 13px;
-    width: 6px;
-}
-
-@keyframes blink {
-    0% {
-        opacity: 1;
-    }
-
-    49% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
