@@ -12,7 +12,7 @@ $(document).ready(function () {
     var $target = $("#text-content");
     $this.pushpin({
       top: $target.offset().top,
-      bottom: $target.offset().top + $target.outerHeight()
+      bottom: $target.offset().top + $target.outerHeight() - $this.height()
     });
   });
     
