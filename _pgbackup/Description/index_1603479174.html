@@ -114,30 +114,9 @@
                     </div>                     
                 </div>                 
                 <div class="description-pic-container"> 
-                    <img class="description-pic-background" src="../assets/One_pic_PD.jpg"> 
+                    <img class="description-pic-background" src="../assets/One_pic_PD copy.jpg"> 
                 </div>                 
-            </div>
-            <footer class="page-footer">
-                <div class="container">
-                    <div class="footer-logo">
-                        <img class="responsive-img" src="assets/small logo.jpg" style="border-radius:50%">
-                    </div>
-                    <p class="center" style="color:black;">
-         nyuad.igem@nyu.edu</p>
-                    <div class="divider" style="width:100%;margin-bottom:20px;">
-</div>
-                    <div class="social-media">
-                        <a class="waves-effect" style="width:64px;height:64px;margin-right:20px"> <img class="social-media-img" src="assets/fb.png"></a>
-                        <a class="waves-effect" style="width:64px;height:64px;margin-right:20px"> <img class="social-media-img" src="assets/tw.png"></a>
-                        <a class="waves-effect" style="width:64px;height:64px;margin-right:20px"> <img class="social-media-img" src="assets/ig.png"></a>
-                        <a class="waves-effect" style="width:64px;height:64px;margin-right:20px"> <img class="social-media-img" src="assets/yt.svg"></a>
-                    </div>
-                </div>
-                <div class="footer-copyright"> 
-                    <div class="container" style="color:black;"> All Rights Reserved 2020                           
-</div>                     
-                </div>
-            </footer>             
+            </div>             
         </div>         
         <ul class="sidenav" id="sidenav-9"> 
             <li> 
@@ -161,10 +140,9 @@
 				trigger: ".description-pic-container",
 				start: "top top",
         // makes the height of the scrolling (while pinning) match the width, thus the speed remains constant (vertical/horizontal)
-				end: () => "+=" + document.querySelector(".description-container").offsetHeight-$(window).height()*100, 
+				end: document.querySelector(".description-text").offsetHeight*10, 
 				scrub: true,
 				pin: true,
-        anticipatePin: 1
 			},
 			defaults: {ease: "none"},
 		});

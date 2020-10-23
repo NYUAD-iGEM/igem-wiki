@@ -683,6 +683,7 @@ button:focus {
 .description-number {
     margin-bottom: -1.2em;
     transition: all 0.2s ease;
+    color: #d7d049;
 }
 
 /* this color is important to fade the number properly with bg */
@@ -695,6 +696,7 @@ button:focus {
     transition: all 0.3s ease;
     font-family: Open Sans Condensed;
     font-size: 20px;
+    color: #d7d049;
 }
 
 .description-text:hover > .description-paragraph {
@@ -757,7 +759,6 @@ button:focus {
 .description-pic-container {
     width: 50%;
     overflow: hidden;
-    flex: 1;
 }
 
 .description-pic-background {
@@ -776,7 +777,7 @@ button:focus {
     background-color: white;
     width: 100%;
     padding-top: 5%;
-    height: 50vh;
+    height: 20vh;
 }
 
 .footer {
@@ -787,11 +788,14 @@ button:focus {
     margin-top: 5%;
 }
 
+.page-footer {
+    background-color: white;
+}
+
 .footer-logo {
     position: relative;
-    width: 25%;
-    left: 38%;
-    padding-top: 10%;
+    width: 13%;
+    left: 43%;
 }
 
 .social-media {
@@ -799,4 +803,9 @@ button:focus {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.social-media-img {
+    height: 100%;
+    width: 100%;
 }
