@@ -567,9 +567,6 @@ a.arrow:hover svg g circle {
     font-family: Raleway;
     font-weight: 700;
     letter-spacing: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .side-menu-btn {

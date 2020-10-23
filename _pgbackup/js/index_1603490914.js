@@ -3,7 +3,7 @@ var activeid = 'Menu';
 $(document).ready(function () {
     
     
-  var side_sec_h = $('#side').width()+32;
+  var side_sec_h = $('#side').width();
   var side_sec_w = $('#side').height();
   $('.side-section').css({ height: side_sec_h, width: side_sec_w });
 

@@ -567,9 +567,6 @@ a.arrow:hover svg g circle {
     font-family: Raleway;
     font-weight: 700;
     letter-spacing: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .side-menu-btn {
@@ -687,7 +684,6 @@ button:focus {
 .description-text h3 {
     font-family: Raleway !important;
     font-weight: 800 !important;
-    color: white !important;
 }
 
 /* this transition time is different for other elements to give stagger effect */
@@ -708,7 +704,6 @@ button:focus {
     font-family: Open Sans Condensed !important;
     font-size: 20px !important;
     color: #d7d049;
-    text-align: revert !important;
 }
 
 .description-text:hover > .description-paragraph {

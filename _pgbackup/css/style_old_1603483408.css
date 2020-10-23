@@ -35,14 +35,6 @@ html {
     padding-right: 0px;
 }
 
-.sidenav-overlay {
-    left: 34%;
-}
-
-ul {
-    list-style-image: revert;
-}
-
 /* open-sans-condensed-300 - latin */
 @font-face {
     font-family: 'Open Sans Condensed';
@@ -59,7 +51,8 @@ ul {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
-    src: local('Raleway'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    src: local(''),
+       url('../assets/fonts/raleway-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../assets/fonts/raleway-v18-latin-regular.woff') format('woff');
 
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
@@ -453,7 +446,6 @@ a.arrow:hover svg g circle {
 }
 
 .sidenav {
-    margin: 0 !important;
     z-index: 998;
     left: 4%;
     width: 30%;
@@ -463,13 +455,13 @@ a.arrow:hover svg g circle {
 .sidenav-description {
     margin-top: 0px;
     font-weight: 100;
-    font-size: 17px !important;
-    font-family: 'Open Sans Condensed' !important;
+    font-size: 17px;
+    font-family: 'Open Sans Condensed';
     color: #6A7C10;
 }
 
 .project-pages-li {
-    font-family: "Open Sans Condensed" !important;
+    font-family: "Open Sans Condensed";
 }
 
 .project-pages-li > a {
@@ -480,7 +472,7 @@ a.arrow:hover svg g circle {
     color: #2175FF;
     cursor: pointer;
     font-weight: 400;
-    text-decoration: none !important;
+    text-decoration: none;
     font-family: 'Raleway';
     font-size: 25px !important;
     font-weight: 800 !important;
@@ -567,9 +559,6 @@ a.arrow:hover svg g circle {
     font-family: Raleway;
     font-weight: 700;
     letter-spacing: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .side-menu-btn {
@@ -687,7 +676,6 @@ button:focus {
 .description-text h3 {
     font-family: Raleway !important;
     font-weight: 800 !important;
-    color: white !important;
 }
 
 /* this transition time is different for other elements to give stagger effect */
@@ -705,10 +693,9 @@ button:focus {
 
 .description-paragraph {
     transition: all 0.3s ease;
-    font-family: Open Sans Condensed !important;
-    font-size: 20px !important;
+    font-family: Open Sans Condensed;
+    font-size: 20px;
     color: #d7d049;
-    text-align: revert !important;
 }
 
 .description-text:hover > .description-paragraph {
