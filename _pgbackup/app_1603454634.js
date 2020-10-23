@@ -31,6 +31,18 @@ gsap.to('.cover', {
   },
 });
 
+// video fade animation
+gsap.from('.video-placeholder', {
+  opacity: 0,
+  ease: 'power1.out',
+  scrollTrigger: {
+    trigger: '.placeholder',
+    start: 'top 50%', // the default values
+    end: 'bottom bottom',
+    scrub: 0.5,
+  },
+});
+
 ///////////////////////////////////////////////////////
 //this is where the parallax animations starts
 
@@ -275,7 +287,7 @@ let tl4 = gsap.timeline({
     trigger: '.second-panel',
     start: 'top top',
     // makes the height of the scrolling (while pinning) match the width, thus the speed remains constant (vertical/horizontal)
-    end: () => '+=' + document.querySelector('.second-panel').offsetHeight*2.2,
+    end: () => '+=' + document.querySelector('.second-panel').offsetHeight*3.2,
     scrub: 0.4,
     pin: true,
     // anticipatePin: 1,
@@ -316,7 +328,7 @@ gsap.from('.second-text-panel-description', {
 gsap.to('.second-text-panel-description', {
   onStart: () => {
     desc_2.innerHTML ="Swab an animal at the point of capture/care <br/><br/>Insert the swabbed specimen to our device";},
-  ease: 'power1.out', <br/>
+  ease: 'power1.out', 
   scrollTrigger: {
     trigger: '.second-left-panel-2',
     start: 'top top', // the default values
@@ -328,7 +340,7 @@ gsap.to('.second-text-panel-description', {
 //3
 gsap.to('.second-text-panel-description', {
   onStart: () => {
-    desc_2.innerHTML ="Swab an animal at the point of capture/care <br/> Insert the swabbed specimen to our device <br/> Receive the result back in 30-60 minutes";
+    desc_2.innerHTML ="Swab an animal at the point of capture/care <br/><br/> Insert the swabbed specimen to our device <br/><br/> Receive the result back in 30-60 minutes";
   },
   //this width depends on the characters in the title
   //width: '18.5ch',
@@ -341,10 +353,27 @@ gsap.to('.second-text-panel-description', {
     //markers: true,
   },
 });
+
+gsap.to('.second-text-panel-description', {
+  onStart: () => {
+    desc_2.innerHTML ="Swab an animal at the point of capture/care <br/><br/> Insert the swabbed specimen to our device <br/><br/> Receive the result back in 30-60 minutes <br/><br/> Database and API";
+  },
+  //this width depends on the characters in the title
+  //width: '18.5ch',
+  ease: 'power1.out',
+  scrollTrigger: {
+    trigger: '.second-left-panel-4',
+    start:() => '+=' + document.querySelector('.panel').offsetHeight*2 , // the default values
+    duration: 1,
+    toggleActions: 'restart none restart restart',
+    //markers: true,
+  },
+});
 // text animation end//
 
 tl4.addLabel('first', 0);
 tl4.addLabel('second', 1);
+tl4.addLabel('third', 2);
 // animate the container one way...
 tl4
   .fromTo('.second-right-panel-2', { xPercent: -100, x: 0 }, { xPercent: 0 }, 'first')
@@ -361,5 +390,115 @@ tl4
 
   .fromTo('.second-left-panel-3', { yPercent: 100, y: 0 }, { yPercent: 0 }, 'second')
 
-  .fromTo('.second-background-3', { yPercent: -100, y: 0 }, { yPercent: 0 }, 'second');
+  .fromTo('.second-background-3', { yPercent: -100, y: 0 }, { yPercent: 0 }, 'second')
 
+  .fromTo('.second-right-panel-4', { xPercent: -100, x: 0 }, { xPercent: 0 }, 'third')
+
+  .fromTo('.second-video-background-7', { xPercent: 100, x: 0 }, { xPercent: 0 }, 'third')
+
+  .fromTo('.second-left-panel-4', { yPercent: 100, y: 0 }, { yPercent: 0 }, 'third')
+
+  .fromTo('.second-background-left-4', { yPercent: -100, y: 0 }, { yPercent: 0 }, 'third');
+
+
+// hover animation on video
+const text = document.querySelector('.video-text')
+document.querySelector('.video-placeholder').addEventListener('mouseover', () => {
+  text.classList.add('video-text-visible');
+})
+document.querySelector('.video-placeholder').addEventListener('mouseout', () => {
+  text.classList.remove('video-text-visible');
+})
+
+
+// values to keep track of the number of letters typed, which quote to use. etc. Don't change these values.
+var i = 0,
+    a = 0,
+    isBackspacing = false,
+    isParagraph = false;
+
+// Typerwrite text content. Use a pipe to indicate the start of the second line "|".  
+var textArray = [
+  "CRISPR", 
+  "ABE", 
+  "CANNOT",
+  "EMI"
+];
+
+// Speed (in milliseconds) of typing.
+var speedForward = 100, //Typing Speed
+    speedWait = 1000, // Wait between typing and backspacing
+    speedBetweenLines = 1000, //Wait between first and second lines
+    speedBackspace = 25; //Backspace Speed
+
+//Run the loop
+typeWriter("output", textArray);
+
+function typeWriter(id, ar) {
+  var element = $("#" + id),
+      aString = ar[a],
+      eHeader = element.children("h1"), //Header element
+      eParagraph = element.children("p"); //Subheader element
+  
+  // Determine if animation should be typing or backspacing
+  if (!isBackspacing) {
+    
+    // If full string hasn't yet been typed out, continue typing
+    if (i < aString.length) {
+      
+      // If character about to be typed is a pipe, switch to second line and continue.
+      if (aString.charAt(i) == "|") {
+        isParagraph = true;
+        eHeader.removeClass("cursor");
+        eParagraph.addClass("cursor");
+        i++;
+        setTimeout(function(){ typeWriter(id, ar); }, speedBetweenLines);
+        
+      // If character isn't a pipe, continue typing.
+      } else {
+        // Type header or subheader depending on whether pipe has been detected
+        if (!isParagraph) {
+          eHeader.text(eHeader.text() + aString.charAt(i));
+        } else {
+          eParagraph.text(eParagraph.text() + aString.charAt(i));
+        }
+        i++;
+        setTimeout(function(){ typeWriter(id, ar); }, speedForward);
+      }
+      
+    // If full string has been typed, switch to backspace mode.
+    } else if (i == aString.length) {
+      
+      isBackspacing = true;
+      setTimeout(function(){ typeWriter(id, ar); }, speedWait);
+      
+    }
+    
+  // If backspacing is enabled
+  } else {
+    
+    // If either the header or the paragraph still has text, continue backspacing
+    if (eHeader.text().length > 0 || eParagraph.text().length > 0) {
+      
+      // If paragraph still has text, continue erasing, otherwise switch to the header.
+      if (eParagraph.text().length > 0) {
+        eParagraph.text(eParagraph.text().substring(0, eParagraph.text().length - 1));
+      } else if (eHeader.text().length > 0) {
+        eParagraph.removeClass("cursor");
+        eHeader.addClass("cursor");
+        eHeader.text(eHeader.text().substring(0, eHeader.text().length - 1));
+      }
+      setTimeout(function(){ typeWriter(id, ar); }, speedBackspace);
+    
+    // If neither head or paragraph still has text, switch to next quote in array and start typing.
+    } else { 
+      
+      isBackspacing = false;
+      i = 0;
+      isParagraph = false;
+      a = (a + 1) % ar.length; //Moves to next position in array, always looping back to 0
+      setTimeout(function(){ typeWriter(id, ar); }, 50);
+      
+    }
+  }
+}

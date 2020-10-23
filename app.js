@@ -1,7 +1,7 @@
 // gsap.registerPlugin(ScrollTrigger);
 
 //initial text animations for staggering animation on load
-// this whole timeline is for the text and the button
+// this whole timeline is for the text and the button 
 const tl = gsap.timeline();
 tl.from('.main-text', {
   y: 40,
@@ -475,7 +475,7 @@ function typeWriter(id, ar) {
     }
     
   // If backspacing is enabled
-  } else {
+  } else { 
     
     // If either the header or the paragraph still has text, continue backspacing
     if (eHeader.text().length > 0 || eParagraph.text().length > 0) {
