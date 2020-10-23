@@ -419,10 +419,7 @@ var i = 0,
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".  
 var textArray = [
-  "CRISPR", 
-  "ABE", 
-  "CANNOT",
-  "EMI"
+  "CRISPR", "Point of Care", "Bead beating", "Rapid", "Chytridiomycosis", "Field Usage", "RPA", "Silica Matrices", "White-nose syndrome", "LFA", "Florescence", "Batrachochytrium dendrobatidis", "Magnetic Extraction", "Silica Matrices", "Sonication", "Microfluidics", "Batrachochytrium salamandrivorans"
 ];
 
 // Speed (in milliseconds) of typing.
