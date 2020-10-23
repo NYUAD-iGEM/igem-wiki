@@ -674,9 +674,9 @@ button:focus {
     position: relative;
 }
 
-.description-text h3 {
+.descriptio-text h3 {
     font-family: Raleway !important;
-    font-weight: 800 !important;
+    font-weight: 800;
 }
 
 /* this transition time is different for other elements to give stagger effect */
