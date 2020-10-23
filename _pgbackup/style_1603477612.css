@@ -59,7 +59,13 @@ body {
 
 .main-logo {
     position: relative;
-    width: 50%;
+    width: 20%;
+}
+
+.title-text {
+    font-family: RALEWAY;
+    font-weight: 700;
+    letter-spacing: 20px;
 }
 
 /* changed this into an id for more specificity */
@@ -218,14 +224,14 @@ span:nth-child(4) {
 
 .background-1 {
     background-image: url('assets/Set_1.1_Left.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .background-2 {
     background-color: black;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     transform: translate(0%, -100%);
     background-repeat: no-repeat;
@@ -233,7 +239,7 @@ span:nth-child(4) {
 
 .background-3 {
     background-image: url(assets/Set_1.3_Left.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     transform: translate(0%, -100%);
     background-repeat: no-repeat;
@@ -241,7 +247,7 @@ span:nth-child(4) {
 
 .background-4 {
     background-image: url(assets/Set_1.4_left.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     transform: translate(0%, -100%);
     background-repeat: no-repeat;
@@ -249,14 +255,14 @@ span:nth-child(4) {
 
 .second-background-1 {
     background-color: black;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .second-background-2 {
     background-color: black;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     transform: translate(0%, -100%);
     background-repeat: no-repeat;
@@ -271,7 +277,7 @@ span:nth-child(4) {
 
 .second-background-left-4 {
     background-image: url(assets/Set_2.4_Left.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     transform: translate(0%, -100%);
     background-repeat: no-repeat;
@@ -562,6 +568,7 @@ body {
 /* Cursor Styling */
 h1.cursor {
     font-size: 2rem !important;
+    font-family: 'Open Sans Condensed' !important;
 }
 
 .cursor::after {
@@ -576,7 +583,7 @@ h1.cursor {
 
 h1.cursor::after {
     height: 24px;
-    width: 13px;
+    width: 2px;
     font-size: 2rem !important;
 }
 

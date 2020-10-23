@@ -683,6 +683,7 @@ button:focus {
 .description-number {
     margin-bottom: -1.2em;
     transition: all 0.2s ease;
+    color: #d7d049;
 }
 
 /* this color is important to fade the number properly with bg */
@@ -695,6 +696,7 @@ button:focus {
     transition: all 0.3s ease;
     font-family: Open Sans Condensed;
     font-size: 20px;
+    color: #d7d049;
 }
 
 .description-text:hover > .description-paragraph {
