@@ -302,7 +302,7 @@ const desc_2 = document.querySelector('.second-text-panel-description');
 gsap.to('.second-text-panel-title', {
   onStart: () => {
     title_2.textContent = 'Fungal Diagnostics';
-    desc_2.textContent ="Swab an animal at the point of capture/care";
+    desc_2.textContent ="1) Swab an animal at the point of capture/care";
   },
   width: '16ch',
   ease: 'power1.out',
@@ -327,7 +327,7 @@ gsap.from('.second-text-panel-description', {
 //2
 gsap.to('.second-text-panel-description', {
   onStart: () => {
-    desc_2.innerHTML ="Swab an animal at the point of capture/care <br/><br/>Insert the swabbed specimen to our device";},
+    desc_2.innerHTML ="1) Swab an animal at the point of capture/care <br/><br/> 2) Insert the swabbed specimen to our device";},
   ease: 'power1.out', 
   scrollTrigger: {
     trigger: '.second-left-panel-2',
@@ -340,7 +340,7 @@ gsap.to('.second-text-panel-description', {
 //3
 gsap.to('.second-text-panel-description', {
   onStart: () => {
-    desc_2.innerHTML ="Swab an animal at the point of capture/care <br/><br/> Insert the swabbed specimen to our device <br/><br/> Receive the result back in 30-60 minutes";
+    desc_2.innerHTML ="1) Swab an animal at the point of capture/care <br/><br/> 2) Insert the swabbed specimen to our device <br/><br/>  3) Receive the result back in 30-60 minutes";
   },
   //this width depends on the characters in the title
   //width: '18.5ch',
@@ -356,7 +356,7 @@ gsap.to('.second-text-panel-description', {
 
 gsap.to('.second-text-panel-description', {
   onStart: () => {
-    desc_2.innerHTML ="Swab an animal at the point of capture/care <br/><br/> Insert the swabbed specimen to our device <br/><br/> Receive the result back in 30-60 minutes <br/><br/> Database and API";
+    desc_2.innerHTML ="1) Swab an animal at the point of capture/care <br/><br/> 2) Insert the swabbed specimen to our device <br/><br/> 3) Receive the result back in 30-60 minutes <br/><br/> 4) Retrieve the results in various devices using our database and API";
   },
   //this width depends on the characters in the title
   //width: '18.5ch',
