@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="../css/materialize.css">
+    <link rel="stylesheet" href="../css/style_old.css">
+    <title>New page</title>
+</head>
+<style>
+    .team-container {
+        font-family: sans-serif;
+        font-size: 1.4em;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .team-title {
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        align-items: center;
+    }
+
+    .first-section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .text-1 {
+        width: 90%;
+    }
+
+    .team-img {
+        width: 50%;
+    }
+
+    .small-text {
+        width: 50%;
+        margin-top: -2em;
+    }
+
+    .big-img {
+        padding-top: 5em;
+        width: 100%;
+    }
+
+    .second-section {
+        padding-top: 8em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .third-section {
+        padding: 16em 0 8em 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .third-section .team-img {
+        width: 40%;
+        margin-top: -32em;
+        align-self: center;
+    }
+
+    .third-section-text {
+        width: 47%;
+    }
+
+    .team {
+        width: 100%;
+        margin-bottom: 6em;
+    }
+
+    .team h3 {
+        text-align: center;
+    }
+
+    .team-row {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 4em;
+        position: relative;
+    }
+
+    .text-row {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .team-text {
+        padding-top: 0.7em;
+        width: 30%;
+        line-height: 0.8em;
+    }
+
+    .team-text p {
+        font-size: 0.7em;
+        margin-top: -0.2em;
+    }
+
+    .team-headshot-1 {
+        background: url('../assets/Headshots/Abhay.jpg') 50% 50% no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 16em;
+    }
+
+    .team-headshot-1:hover {
+        background: url('../assets/Headshots/Abhay_Goofy.jpg') 50% 50% no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 16em;
+    }
+
+    .team-headshot-2 {
+        background: url('../assets/Headshots/Adrian.jpg') 50% 50% no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 16em;
+    }
+
+    .team-headshot-2:hover {
+        background: url('../assets/Headshots/Adrian_Goofy.jpg') 50% 50% no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 16em;
+    }
+
+    .team-headshot-3 {
+        background: url('../assets/Headshots/Ayesha.jpg') 50% 50% no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 16em;
+    }
+
+    .team-headshot-4 {
+        background: url('../assets/Headshots/Marko.JPG') 50% 50% no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 16em;
+    }
+
+    .team-headshot-5 {
+        background: url('../assets/Headshots/Prajjwal.jpg') 45% 50% no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 16em;
+    }
+
+    .team-headshot-5:hover {
+        background: url('../assets/Headshots/Prajjwal_goofy.jpg') 40% 50% no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 16em;
+    }
+
+    .team-headshot-6 {
+        background: url('../assets/Headshots/Safal.jpg') 50% 50% no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 16em;
+    }
+
+    .team-headshot-6:hover {
+        background: url('../assets/Headshots/Safal_goofy.jpg') 50% 50% no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 16em;
+    }
+
+    .team-headshot-7 {
+        background: url('../assets/Headshots/Sakura.JPG') 50% 50% no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 16em;
+    }
+
+    .team-headshot-7:hover {
+        background: url('../assets/Headshots/Sakura_goofy.JPG') 50% 50% no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 16em;
+    }
+
+    .team-headshot-8 {
+        background: url('../assets/Headshots/Yaman.jpg') 45% 50% no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 16em;
+    }
+
+    .team-headshot-8:hover {
+        background: url('../assets/Headshots/Yaman_goofy.jpg') 50% 50% no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 16em;
+    }
+
+    .team-headshot-9 {
+        background: url('../assets/Headshots/Zerina1.jpg') 50% 50% no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 16em;
+    }
+
+    .team-headshot-9:hover {
+        background: url('../assets/Headshots/Zerina_Goofy.jpg') 50% 50% no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 16em;
+    }
+</style>
+
+<body>
+    <div id="side" class="side-btn btn-flat">
+        <div class="side-section center">Menu</div>
+        <button class="menu sidenav-close" aria-label="Main Menu" id="butt">
+            <svg viewbox="0 0 100 100">
+                <path class="line line1"
+                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3"
+                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </button>
+    </div>
+    <div id="my-content">
+        <div class="team-container">
+            <div class="team-title">
+                <h2>Team</h2>
+            </div>
+            <div class="first-section">
+                <div>
+                    <div class="text-1">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eligendi culpa a omnis, ea optio
+                        enim dolorum laboriosam error incidunt recusandae fuga aliquid, reprehenderit eos consectetur
+                        alias animi, suscipit sunt laboriosam error!
+                    </div>
+                </div>
+                <img class="team-img" src="../assets/right.webp" alt="">
+            </div>
+            <div class="small-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, maiores.
+            </div>
+            <img class="big-img" src="../assets/team-big-img.webp" alt="">
+
+            <div class="second-section">
+                <div>
+                    <div class="text-1">
+                        alias odit. Voluptatum ad earum officiis optio corrupti itaque animi laborum consequatur
+                        obcaecati nulla et labore, consectetur aliquam possimus distinctio impedit.
+                    </div>
+                </div>
+                <img class="team-img" src="../assets/second-section-1.jpg" alt="">
+            </div>
+            <div class="third-section">
+                <img class="team-img" src="../assets/second-section-2.jpg" alt="">
+                <div class="third-section-text">
+                    <div class="text-1">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, est delectus recusandae
+                        blanditiis
+                        ab aspernatur eos voluptatibus totam quas ut velit ullam minima voluptatem ratione doloribus
+                        deserunt aliquam id alias odit. Voluptatum ad earum officiis optio corrupti itaque animi laborum
+                        consequatur obcaecati nulla et labore, consectetur aliquam possimus distinctio impedit.
+                    </div>
+                </div>
+            </div>
+            <div class="team">
+                <h3>Team</h3>
+                <div class="images">
+                    <div class="team-row">
+                        <div class="team-headshot-1">
+                        </div>
+                        <div class="team-headshot-2">
+                        </div>
+                        <div class="team-headshot-3">
+                        </div>
+                    </div>
+                    <div class="text-row">
+                        <div class="team-text">
+                            <h5>Abhay</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="team-text">
+                            <h5>Adrian</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="team-text">
+                            <h5>Ayesha</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="team-row">
+                        <div class="team-headshot-4">
+                        </div>
+                        <div class="team-headshot-5">
+                        </div>
+                        <div class="team-headshot-6">
+                        </div>
+                    </div>
+                    <div class="text-row">
+                        <div class="team-text">
+                            <h5>Marko</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="team-text">
+                            <h5>Prajjwal Bhattarai</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="team-text">
+                            <h5>Safal Shrestha</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="team-row">
+                        <div class="team-headshot-7">
+                        </div>
+                        <div class="team-headshot-8">
+                        </div>
+                        <div class="team-headshot-9">
+                        </div>
+                    </div>
+                    <div class="text-row">
+                        <div class="team-text">
+                            <h5>Sakura</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="team-text">
+                            <h5>Yaman</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="team-text">
+                            <h5>Zerina</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="sidenav" id="sidenav-9">
+        <li>
+            <a href="sass.html">Sass</a>
+        </li>
+        <li>
+            <a href="badges.html">Components</a>
+        </li>
+        <li>
+            <a href="collapsible.html">JavaScript</a>
+        </li>
+    </ul>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/materialize.js"></script>
+    <script type="text/javascript" src="../js/gsap.min.js"></script>
+    <script type="text/javascript" src="../js/ScrollTrigger.min.js"></script>
+</body>
+
+</html>

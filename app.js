@@ -356,7 +356,7 @@ gsap.to('.second-text-panel-description', {
 
 gsap.to('.second-text-panel-description', {
   onStart: () => {
-    desc_2.innerHTML ="1) Swab an animal at the point of capture/care <br/><br/> 2) Insert the swabbed specimen to our device <br/><br/> 3) Receive the result back in 30-60 minutes <br/><br/> 4) Retrieve the results in various devices using our database and API";
+    desc_2.innerHTML ="1) Swab an animal at the point of capture/care <br/><br/> 2) Insert the swabbed specimen to our device <br/><br/> 3) Receive the result back in 30-60 minutes <br/><br/> 4) Use the data in multiple devices using our database and API";
   },
   //this width depends on the characters in the title
   //width: '18.5ch',
